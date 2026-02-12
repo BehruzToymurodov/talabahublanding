@@ -78,7 +78,9 @@ const CardInner: React.FC<CardInnerProps> = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       transition={{ type: 'spring', stiffness: 220, damping: 22 }}
-      className={`glass-card card-glow glow-${tone} group rounded-3xl p-6 transition hover:shadow-glow ${className}`}
+      className={`glass-card card-glow glow-${tone} group rounded-3xl p-6 transition ${
+        hoverable ? 'hover:shadow-glow' : ''
+      } ${className}`}
     >
       {children}
     </motion.div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import Section from '../layout/Section'
 import Container from '../layout/Container'
@@ -32,8 +32,6 @@ const partners = [
 
 const PartnersSection: React.FC = () => {
   const { t } = useTranslation()
-  const reducedMotion = useReducedMotion()
-
   return (
     <Section variant="soft">
       <Container>
