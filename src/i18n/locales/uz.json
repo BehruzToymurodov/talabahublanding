@@ -1,0 +1,257 @@
+{
+	"nav": {
+		"demo": "Demo",
+		"problem": "Muammo",
+		"solution": "Yechim",
+		"how": "Qanday ishlaydi?",
+		"team": "Jamoa",
+		"finance": "Moliya",
+		"roadmap": "Yo‘l xaritasi",
+		"faq": "FAQ"
+	},
+	"hero": {
+		"title": "Talabalar uchun chegirmalar — tasdiqlangan student status bilan",
+		"subtitle": "Universitet talabasi ekanligingizni tasdiqlang va O‘zbekistondagi hamkorlardan maxsus chegirmalarni oling.",
+		"chip1": "Tezkor tasdiqlash",
+		"chip2": "Real hamkor brendlar",
+		"chip3": "Kod yoki QR orqali foydalanish",
+		"statsLine": "O‘zbekistonda ro‘yxatdan o‘tgan talabalar: 518.3k bakalavr, 21.1k magistr, jami 539.4k.",
+		"statsSource": "Manba: stat.uz",
+		"ctaPrimary": "Boshlash",
+		"ctaSecondary": "Demoni ko‘rish",
+		"scrollHint": "Pastga",
+		"panelTag": "Tezkor",
+		"panelTitle": "Tasdiqlangan Student Pass",
+		"panelSecureTitle": "Xavfsiz tekshiruv",
+		"panelSecureText": "Bir necha daqiqada tasdiq",
+		"panelPersonalTitle": "Shaxsiy takliflar",
+		"panelPersonalText": "Sizga mos chegirmalar",
+		"panelAccessLabel": "Hamkorlarga kirish"
+	},
+	"problem": {
+		"title": "Muammo",
+		"subtitle": "Talabalar uchun chegirmalarda uchraydigan asosiy to‘siqlar.",
+		"items": [
+			{
+				"title": "Soxta chegirmalar",
+				"text": "Talaba bo‘lmaganlar ham aksiyalardan foydalanib, ishonchni pasaytiradi."
+			},
+			{
+				"title": "Tasdiqlash yo‘q",
+				"text": "Student ekanligini isbotlaydigan yagona va tezkor platforma yetishmaydi."
+			},
+			{
+				"title": "Foydalanish qiyin",
+				"text": "Kodlar va shartlar chalkash, offline/online jarayonlar mos emas."
+			}
+		]
+	},
+	"solution": {
+		"title": "Yechim",
+		"headline": "Talaba statusi tasdiqlangan, hamkorlar uchun ham shaffof va xavfsiz chegirma ekotizimi.",
+		"before": "Oddiy chegirmalar",
+		"after": "Tasdiqlangan student chegirmalari",
+		"statBefore": "Suiste’mol holatlari",
+		"statAfter": "Ishonch darajasi",
+		"featuresTitle": "Asosiy imkoniyatlar",
+		"features": [
+			"Tasdiqlash tizimi",
+			"Chegirma kodlari",
+			"QR (do‘konda)",
+			"Sevimlilar",
+			"Hamkorlar katalogi",
+			"Ko‘p til"
+		],
+		"featureDescriptions": [
+			"Universitet va hujjatlar bilan tezkor tekshiruv.",
+			"Bir marta olingan kod ko‘p joyda ishlaydi.",
+			"Offline nuqtalarda skan qilish uchun qulay QR.",
+			"Eng yoqqan brendlarni bitta joyda saqlang.",
+			"Yuzlab hamkorlarni filtrlang va tanlang.",
+			"UZ/RU/EN tilida to‘liq tajriba."
+		]
+	},
+	"how": {
+		"title": "Qanday ishlaydi?",
+		"subtitle": "Bir necha oddiy qadam bilan chegirmalardan foydalaning.",
+		"steps": [
+			"Ro‘yxatdan o‘tish",
+			"Universitet tanlash",
+			"Student ID yuklash",
+			"Selfie tasdiqlash",
+			"Chegirma tanlash",
+			"Kod/QR bilan foydalanish"
+		],
+		"stepDescriptions": [
+			"Bir necha daqiqada profil yarating.",
+			"OTMingizni toping va tasdiqlang.",
+			"Student ID rasmini yuklang.",
+			"Selfie orqali tezkor verifikatsiya.",
+			"Hamkorlar ichidan mos chegirmani tanlang.",
+			"Kod yoki QR bilan foydalaning."
+		]
+	},
+	"features": {
+		"title": "Platforma imkoniyatlari",
+		"subtitle": "Talabalar va hamkorlar uchun bir xil darajada qulay tajriba.",
+		"items": [
+			{
+				"title": "Analitika",
+				"text": "Hamkorlar uchun real ko‘rsatkichlar va segmentlar."
+			},
+			{
+				"title": "Xavfsiz verifikatsiya",
+				"text": "Ma’lumotlar shifrlanadi va tekshirish jarayoni tez ishlaydi."
+			},
+			{
+				"title": "Mobilga mos",
+				"text": "Chegirmalar smartfon orqali bir necha soniyada."
+			}
+		]
+	},
+	"partners": {
+		"title": "Hamkorlar",
+		"subtitle": "O‘zbekistondagi top brendlar bilan birga ishlaymiz.",
+		"note": "Logolar sizning assets papkangizdan olinadi."
+	},
+	"appPreview": {
+		"title": "Ilova ko‘rinishi",
+		"subtitle": "Talabalar uchun sodda, tez va chiroyli interfeys.",
+		"bullets": [
+			"Hamkorlarni filtrlang va sevimlilarga qo‘shing",
+			"QR yoki kodni bir teginishda oling",
+			"Shaxsiy profil va status tekshiruvi",
+			"Chegirmalar tarixini kuzatib boring"
+		],
+		"screens": ["Chegirmalar", "QR Pass", "Sevimlilar"],
+		"mockTitle": "TalabaHub",
+		"mockSubtitle": "Tasdiqlangan chegirma pass",
+		"partnerCard": "Hamkor kartasi",
+		"screensLabel": "Ekranlar"
+	},
+	"demo": {
+		"title": "Demo",
+		"subtitle": "TalabaHub qanday ishlashini videoda ko‘ring.",
+		"open": "Demoni ochish"
+	},
+	"financial": {
+		"title": "Moyila",
+		"items": [
+			{
+				"title": "Talabalar o‘sishi",
+				"text": "Ko‘proq ro‘yxatdan o‘tgan talabalar — ko‘proq xaridlar.",
+				"stat": "+38%"
+			},
+			{
+				"title": "Konversiya",
+				"text": "Tasdiqlangan chegirmalar ko‘rsatkichlarni oshiradi.",
+				"stat": "+22%"
+			},
+			{
+				"title": "Sodiqlik",
+				"text": "Chegirmalar qaytishlarni va retentionni ko‘paytiradi.",
+				"stat": "+30%"
+			},
+			{
+				"title": "Brend ishonchi",
+				"text": "Soxta foydalanish kamayadi, ishonch ortadi.",
+				"stat": "-70%"
+			}
+		]
+	},
+	"team": {
+		"title": "Jamoa",
+		"subtitle": "Talabalar uchun mahsulot yaratadigan tajribali jamoa.",
+		"members": [
+			{
+				"name": "Behruz To'ymurodov",
+				"role": "CEO, Frontend Developer, UI/UX Designer, Researcher"
+			},
+			{
+				"name": "Suyunov Sardorbek",
+				"role": "Backend Developer, Data Analyst"
+			},
+			{
+				"name": "Xushnudbek To'ymurodov",
+				"role": "CFO, Financial & Investment analyst"
+			}
+		]
+	},
+	"roadmap": {
+		"title": "Yo‘l xaritasi",
+		"phases": [
+			{
+				"title": "MVP",
+				"text": "Verifikatsiya va chegirma katalogining ishga tushishi."
+			},
+			{
+				"title": "Hamkorlar onboarding",
+				"text": "Yirik brendlar va lokal bizneslarni ulash."
+			},
+			{
+				"title": "Universitet verifikatsiyasi",
+				"text": "Rasmiy tasdiqlash jarayonlarini integratsiya qilish."
+			},
+			{
+				"title": "Mobil ilova",
+				"text": "iOS va Android uchun to‘liq mobil tajriba."
+			}
+		]
+	},
+	"testimonials": {
+		"title": "Fikrlar",
+		"items": [
+			{
+				"name": "Nodira",
+				"role": "Talaba",
+				"quote": "Bir marta tasdiqladim va barcha chegirmalar bitta joyda. Juda qulay!"
+			},
+			{
+				"name": "Rustam",
+				"role": "Hamkor brend",
+				"quote": "Talabalar segmentini aniq ko‘rish va o‘sishni kuzatish osonlashdi."
+			},
+			{
+				"name": "Mohira",
+				"role": "Universitet vakili",
+				"quote": "Verifikatsiya jarayoni shaffof va talabalar uchun xavfsiz."
+			}
+		]
+	},
+	"faq": {
+		"title": "FAQ",
+		"items": [
+			{
+				"q": "Talaba statusi qanday tekshiriladi?",
+				"a": "Student ID va selfie orqali avtomatik tekshiruv amalga oshiriladi."
+			},
+			{
+				"q": "Chegirma kodi qayerda ishlaydi?",
+				"a": "Kodlar hamkorlarning online va offline nuqtalarida ishlaydi."
+			},
+			{
+				"q": "Ma’lumotlarim xavfsizmi?",
+				"a": "Shaxsiy ma’lumotlar shifrlangan holda saqlanadi va faqat tekshiruv uchun ishlatiladi."
+			},
+			{
+				"q": "Hamkor bo‘lish uchun nima kerak?",
+				"a": "Biz bilan bog‘laning, shartlar va onboarding jarayonini yuboramiz."
+			},
+			{
+				"q": "Qaysi universitetlar qo‘llab-quvvatlanadi?",
+				"a": "Dastlab yirik universitetlar, keyin barcha OTMlar bosqichma-bosqich."
+			},
+			{
+				"q": "Chegirma olish qancha vaqt oladi?",
+				"a": "Tasdiqlash odatda bir necha daqiqada yakunlanadi."
+			}
+		]
+	},
+	"footer": {
+		"tagline": "Tasdiqlangan student status bilan real chegirmalar.",
+		"links": "Tezkor havolalar",
+		"contact": "Aloqa",
+		"email": "hello@talabahub.uz",
+		"rights": "Barcha huquqlar himoyalangan."
+	}
+}

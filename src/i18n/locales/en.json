@@ -1,0 +1,257 @@
+{
+	"nav": {
+		"demo": "Demo",
+		"problem": "Problem",
+		"solution": "Solution",
+		"how": "How it works?",
+		"team": "Team",
+		"finance": "Finance",
+		"roadmap": "Roadmap",
+		"faq": "FAQ"
+	},
+	"hero": {
+		"title": "Student discounts — with verified status",
+		"subtitle": "Verify your university status and unlock special discounts from partners across Uzbekistan.",
+		"chip1": "Fast verification",
+		"chip2": "Real partner brands",
+		"chip3": "Use via code or QR",
+		"statsLine": "Registered students in Uzbekistan: 518.3k bachelor, 21.1k master, 539.4k total.",
+		"statsSource": "Source: stat.uz",
+		"ctaPrimary": "Get started",
+		"ctaSecondary": "View demo",
+		"scrollHint": "Scroll",
+		"panelTag": "Instant",
+		"panelTitle": "Verified Student Pass",
+		"panelSecureTitle": "Secure check",
+		"panelSecureText": "Verified in minutes",
+		"panelPersonalTitle": "Personal offers",
+		"panelPersonalText": "Discounts tailored to you",
+		"panelAccessLabel": "Partner access"
+	},
+	"problem": {
+		"title": "Problem",
+		"subtitle": "Key obstacles in student discount programs.",
+		"items": [
+			{
+				"title": "Fake discounts",
+				"text": "Unverified users reduce trust and quality of campaigns."
+			},
+			{
+				"title": "No verification",
+				"text": "There is no single, fast platform to confirm student status."
+			},
+			{
+				"title": "Hard to redeem",
+				"text": "Codes and rules are confusing, online and offline don’t match."
+			}
+		]
+	},
+	"solution": {
+		"title": "Solution",
+		"headline": "Verified student status with transparent, secure discounts for partners.",
+		"before": "Generic discounts",
+		"after": "Verified student discounts",
+		"statBefore": "Abuse rate",
+		"statAfter": "Trust level",
+		"featuresTitle": "Core capabilities",
+		"features": [
+			"Verification system",
+			"Discount codes",
+			"QR (in-store)",
+			"Favorites",
+			"Partner catalog",
+			"Multi-language"
+		],
+		"featureDescriptions": [
+			"Fast checks via university and documents.",
+			"One code works across partner locations.",
+			"Handy QR for in-store scanning.",
+			"Save your favorite brands in one place.",
+			"Filter and choose from hundreds of partners.",
+			"Full experience in UZ/RU/EN."
+		]
+	},
+	"how": {
+		"title": "How it works?",
+		"subtitle": "A few simple steps to get your discount.",
+		"steps": [
+			"Sign up",
+			"Select university",
+			"Upload student ID",
+			"Selfie verification",
+			"Choose discount",
+			"Redeem via code/QR"
+		],
+		"stepDescriptions": [
+			"Create your profile in minutes.",
+			"Pick your university and confirm.",
+			"Upload your student ID image.",
+			"Fast verification with a selfie.",
+			"Choose a discount from partners.",
+			"Redeem using a code or QR."
+		]
+	},
+	"features": {
+		"title": "Platform features",
+		"subtitle": "A smooth experience for students and partners.",
+		"items": [
+			{
+				"title": "Analytics",
+				"text": "Partners access real metrics and segments."
+			},
+			{
+				"title": "Secure verification",
+				"text": "Data is encrypted and checks are fast."
+			},
+			{
+				"title": "Mobile-first",
+				"text": "Discounts are ready in seconds on mobile."
+			}
+		]
+	},
+	"partners": {
+		"title": "Partners",
+		"subtitle": "We collaborate with leading brands in Uzbekistan.",
+		"note": "Logos will be loaded from your assets folder."
+	},
+	"appPreview": {
+		"title": "App preview",
+		"subtitle": "Simple, fast, and beautiful student experience.",
+		"bullets": [
+			"Filter partners and save favorites",
+			"Get a QR or code in one tap",
+			"Profile and verification status",
+			"Track discount history"
+		],
+		"screens": ["Discounts", "QR Pass", "Favorites"],
+		"mockTitle": "TalabaHub",
+		"mockSubtitle": "Verified discount pass",
+		"partnerCard": "Partner card",
+		"screensLabel": "Screens"
+	},
+	"demo": {
+		"title": "Demo",
+		"subtitle": "See TalabaHub in action with a quick video.",
+		"open": "Open demo"
+	},
+	"financial": {
+		"title": "Moyila",
+		"items": [
+			{
+				"title": "Student growth",
+				"text": "More verified students means more purchases.",
+				"stat": "+38%"
+			},
+			{
+				"title": "Conversion",
+				"text": "Verified discounts improve performance.",
+				"stat": "+22%"
+			},
+			{
+				"title": "Retention",
+				"text": "Discounts boost repeat usage and loyalty.",
+				"stat": "+30%"
+			},
+			{
+				"title": "Brand trust",
+				"text": "Less abuse, higher confidence.",
+				"stat": "-70%"
+			}
+		]
+	},
+	"team": {
+		"title": "Team",
+		"subtitle": "A focused team building for students.",
+		"members": [
+			{
+				"name": "Behruz To'ymurodov",
+				"role": "CEO, Frontend Developer, UI/UX Designer, Researcher"
+			},
+			{
+				"name": "Suyunov Sardorbek",
+				"role": "Backend Developer, Data Analyst"
+			},
+			{
+				"name": "Xushnudbek To'ymurodov",
+				"role": "CFO, Financial & Investment analyst"
+			}
+		]
+	},
+	"roadmap": {
+		"title": "Roadmap",
+		"phases": [
+			{
+				"title": "MVP",
+				"text": "Launch verification and discount catalog."
+			},
+			{
+				"title": "Partner onboarding",
+				"text": "Connect top brands and local businesses."
+			},
+			{
+				"title": "University verification",
+				"text": "Integrate official verification flows."
+			},
+			{
+				"title": "Mobile app",
+				"text": "Full iOS and Android experience."
+			}
+		]
+	},
+	"testimonials": {
+		"title": "Testimonials",
+		"items": [
+			{
+				"name": "Nodira",
+				"role": "Student",
+				"quote": "Verified once and all discounts are in one place. Super convenient!"
+			},
+			{
+				"name": "Rustam",
+				"role": "Partner brand",
+				"quote": "Tracking growth and student engagement is much easier now."
+			},
+			{
+				"name": "Mohira",
+				"role": "University",
+				"quote": "The verification process is transparent and safe for students."
+			}
+		]
+	},
+	"faq": {
+		"title": "FAQ",
+		"items": [
+			{
+				"q": "How is student status verified?",
+				"a": "We verify via Student ID and selfie validation."
+			},
+			{
+				"q": "Where do discount codes work?",
+				"a": "Codes are valid at partner online and offline locations."
+			},
+			{
+				"q": "Is my data safe?",
+				"a": "Personal data is stored securely and encrypted."
+			},
+			{
+				"q": "How can a brand become a partner?",
+				"a": "Contact us to receive terms and onboarding steps."
+			},
+			{
+				"q": "Which universities are supported?",
+				"a": "Starting with major universities, then expanding nationwide."
+			},
+			{
+				"q": "How long does verification take?",
+				"a": "Verification usually completes within minutes."
+			}
+		]
+	},
+	"footer": {
+		"tagline": "Real discounts with verified student status.",
+		"links": "Quick links",
+		"contact": "Contact",
+		"email": "hello@talabahub.uz",
+		"rights": "All rights reserved."
+	}
+}
