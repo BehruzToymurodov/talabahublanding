@@ -16,15 +16,20 @@ const AppPreviewSection: React.FC = () => {
   const bullets = t('appPreview.bullets', { returnObjects: true }) as string[]
   const screens = t('appPreview.screens', { returnObjects: true }) as string[]
   const [activeIndex, setActiveIndex] = useState(0)
+  const previewLabels = screens.length ? screens.slice(0, 3) : ['Screen 1', 'Screen 2', 'Screen 3']
+  const previewCards = previewLabels.map((label, index) => ({
+    label,
+    text: bullets[index] ?? t('appPreview.mockSubtitle')
+  }))
 
   useEffect(() => {
     if (reducedMotion) return
     const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % screens.length)
+      setActiveIndex((prev) => (prev + 1) % previewLabels.length)
     }, 2800)
 
     return () => clearInterval(timer)
-  }, [screens.length, reducedMotion])
+  }, [previewLabels.length, reducedMotion])
 
   return (
     <Section variant="solution">
@@ -41,22 +46,33 @@ const AppPreviewSection: React.FC = () => {
               >
                 <div className="mx-auto h-[520px] w-full rounded-[36px] border border-cyan-400/30 bg-white/30 p-4 shadow-soft backdrop-blur dark:border-cyan-400/30 dark:bg-white/5">
                   <div className="mx-auto mb-4 h-2 w-24 rounded-full bg-white/40" />
-                  <div className="space-y-4">
-                    <div className="rounded-2xl bg-white/40 p-4 text-xs text-slate-600 dark:bg-white/10 dark:text-slate-200">
-                      {t('appPreview.mockTitle')}
-                    </div>
-                    <div className="rounded-2xl border border-cyan-400/30 bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 p-4 text-xs text-slate-700 dark:border-cyan-400/30 dark:text-slate-200">
-                      {t('appPreview.mockSubtitle')}
-                    </div>
-                    <div className="space-y-3">
-                      {[0, 1, 2].map((item) => (
-                        <div
-                          key={item}
-                          className="rounded-2xl border border-cyan-400/30 bg-white/30 p-3 text-xs text-slate-600 dark:border-cyan-400/30 dark:bg-white/5 dark:text-slate-200"
-                        >
-                          {t('appPreview.partnerCard')} {item + 1}
+                  <div className="relative h-[440px] overflow-hidden rounded-[28px] border border-white/30 bg-white/20 shadow-inner dark:border-white/10">
+                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/25 via-indigo-500/10 to-slate-900/20" />
+                    <div className="relative flex h-full flex-col gap-4 p-5">
+                      <div className="flex items-center gap-3">
+                        <div className="h-11 w-11 rounded-2xl bg-white/60 shadow-sm" />
+                        <div className="space-y-2">
+                          <div className="h-3 w-28 rounded-full bg-white/60" />
+                          <div className="h-2 w-20 rounded-full bg-white/40" />
                         </div>
-                      ))}
+                      </div>
+                      <div className="rounded-2xl border border-white/30 bg-white/50 p-3 text-xs font-semibold text-slate-700 shadow-sm">
+                        {t('appPreview.mockTitle')}
+                      </div>
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="h-20 rounded-2xl bg-white/40" />
+                        <div className="h-20 rounded-2xl bg-white/30" />
+                      </div>
+                      <div className="mt-auto space-y-3">
+                        {[0, 1, 2].map((item) => (
+                          <div
+                            key={item}
+                            className="rounded-2xl border border-white/30 bg-white/40 p-3 text-[11px] text-slate-700"
+                          >
+                            {t('appPreview.mockSubtitle')}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -92,7 +108,7 @@ const AppPreviewSection: React.FC = () => {
               <p className="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
                 {t('appPreview.screensLabel')}
               </p>
-              <div className="relative mt-4 h-40 overflow-hidden rounded-3xl border border-cyan-400/30 bg-white/30 p-6 backdrop-blur dark:border-cyan-400/30 dark:bg-white/5">
+              <div className="relative mt-4 h-60 overflow-hidden rounded-3xl border border-cyan-400/30 bg-white/30 p-6 backdrop-blur dark:border-cyan-400/30 dark:bg-white/5">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeIndex}
@@ -103,14 +119,33 @@ const AppPreviewSection: React.FC = () => {
                     className="flex h-full flex-col justify-between"
                   >
                     <div className="text-sm font-semibold text-slate-900 dark:text-white">
-                      {screens[activeIndex]}
+                      {previewCards[activeIndex]?.label}
                     </div>
-                    <div className="grid grid-cols-3 gap-3">
-                      {[0, 1, 2].map((item) => (
+                    <div className="grid grid-cols-3 gap-5">
+                      {previewCards.map((card, index) => (
                         <div
-                          key={item}
-                          className="h-16 rounded-2xl border border-cyan-400/30 bg-white/40 dark:border-cyan-400/30 dark:bg-white/10"
-                        />
+                          key={`${card.label}-${index}`}
+                          className={`relative overflow-hidden rounded-2xl border border-cyan-400/30 bg-white/50 p-4 shadow-inner transition-all dark:border-cyan-400/30 dark:bg-white/10 ${
+                            activeIndex === index
+                              ? 'scale-[1.02] ring-2 ring-cyan-400/60'
+                              : 'opacity-85 hover:opacity-100'
+                          }`}
+                        >
+                          <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-transparent to-indigo-500/20" />
+                          <div className="relative flex h-full flex-col gap-3">
+                            <div className="flex items-center gap-3">
+                              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-600">
+                                <span className="h-2.5 w-2.5 rounded-full bg-cyan-500" />
+                              </span>
+                              <p className="text-sm font-semibold text-slate-900 dark:text-white">{card.label}</p>
+                            </div>
+                            <p className="text-xs text-slate-600 dark:text-slate-300">{card.text}</p>
+                            <div className="mt-auto flex items-center gap-2">
+                              <span className="h-2 w-12 rounded-full bg-cyan-400/40" />
+                              <span className="h-2 w-6 rounded-full bg-cyan-400/20" />
+                            </div>
+                          </div>
+                        </div>
                       ))}
                     </div>
                   </motion.div>
