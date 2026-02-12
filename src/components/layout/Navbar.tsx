@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, LayoutGroup, motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Container from './Container'
 import LanguageSwitcher from '../ui/LanguageSwitcher'
@@ -62,7 +63,7 @@ const Navbar: React.FC = () => {
   const navBg = useTransform(scrollY, [0, 120], ['rgba(var(--surface),0.6)', 'rgba(var(--surface),0.92)'])
   const navItems = useMemo(
     () => [
-      { id: 'demo', label: t('nav.demo') },
+      { id: 'demo', label: t('nav.demo'), path: '/demo' },
       { id: 'muammo', label: t('nav.problem') },
       { id: 'yechim', label: t('nav.solution') },
       { id: 'qanday-ishlaydi', label: t('nav.how') },
@@ -122,24 +123,34 @@ const Navbar: React.FC = () => {
             <nav className="hidden max-w-[58vw] flex-wrap items-center justify-center gap-1.5 rounded-full border border-[rgba(var(--border),0.35)] bg-[rgba(var(--surface),0.5)] px-2 py-2 text-[11px] font-medium text-[rgb(var(--muted))] backdrop-blur lg:flex xl:text-xs">
               {navItems.map((item) => {
                 const isActive = activeId === item.id
+                const className = `relative rounded-full px-3 py-2 text-slate-700 transition-colors duration-200 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white ${
+                  isActive ? 'text-slate-900 dark:text-slate-900' : ''
+                }`
+                const content = (
+                  <>
+                    {isActive && (
+                      <motion.span
+                        layoutId="nav-pill"
+                        className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-300/85 via-sky-300/75 to-indigo-400/85 shadow-[0_6px_16px_rgba(56,189,248,0.35)]"
+                        transition={{ type: 'spring', stiffness: 260, damping: 22 }}
+                      />
+                    )}
+                    <span className="relative z-10 leading-tight">{item.label}</span>
+                  </>
+                )
+
+                if (item.path) {
+                  return (
+                    <Link key={item.id} to={item.path} className={className} onClick={() => setMobileOpen(false)}>
+                      {content}
+                    </Link>
+                  )
+                }
+
                 return (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  onClick={handleNavClick(item.id)}
-                  className={`relative rounded-full px-3 py-2 text-slate-700 transition-colors duration-200 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white ${
-                    isActive ? 'text-slate-900 dark:text-slate-900' : ''
-                  }`}
-                >
-                  {isActive && (
-                    <motion.span
-                      layoutId="nav-pill"
-                      className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-300/85 via-sky-300/75 to-indigo-400/85 shadow-[0_6px_16px_rgba(56,189,248,0.35)]"
-                      transition={{ type: 'spring', stiffness: 260, damping: 22 }}
-                    />
-                  )}
-                  <span className="relative z-10 leading-tight">{item.label}</span>
-                </a>
+                  <a key={item.id} href={`#${item.id}`} onClick={handleNavClick(item.id)} className={className}>
+                    {content}
+                  </a>
                 )
               })}
             </nav>
@@ -171,20 +182,27 @@ const Navbar: React.FC = () => {
           >
             <div className="glass-panel rounded-3xl p-4">
               <div className="flex flex-col gap-2 text-sm">
-                {navItems.map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={handleNavClick(item.id)}
-                    className={`rounded-2xl px-4 py-2 text-left transition ${
-                      activeId === item.id
-                        ? 'bg-gradient-to-r from-cyan-400/30 via-emerald-400/20 to-indigo-400/30 text-slate-900 dark:text-white'
-                        : 'text-slate-600 dark:text-slate-200'
-                    }`}
-                  >
-                    {item.label}
-                  </button>
-                ))}
+                {navItems.map((item) => {
+                  const className = `rounded-2xl px-4 py-2 text-left transition ${
+                    activeId === item.id
+                      ? 'bg-gradient-to-r from-cyan-400/30 via-emerald-400/20 to-indigo-400/30 text-slate-900 dark:text-white'
+                      : 'text-slate-600 dark:text-slate-200'
+                  }`
+
+                  if (item.path) {
+                    return (
+                      <Link key={item.id} to={item.path} className={className} onClick={() => setMobileOpen(false)}>
+                        {item.label}
+                      </Link>
+                    )
+                  }
+
+                  return (
+                    <button key={item.id} type="button" onClick={handleNavClick(item.id)} className={className}>
+                      {item.label}
+                    </button>
+                  )
+                })}
               </div>
               <div className="mt-4 flex items-center justify-between">
                 <LanguageSwitcher />
