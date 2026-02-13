@@ -26,7 +26,8 @@
 		"panelSecureText": "Bir necha daqiqada tasdiq",
 		"panelPersonalTitle": "Shaxsiy takliflar",
 		"panelPersonalText": "Sizga mos chegirmalar",
-		"panelAccessLabel": "Hamkorlarga kirish"
+		"panelAccessLabel": "Hamkorlarga kirish",
+		"panelAccessValue": "Keng qamrov"
 	},
 	"problem": {
 		"title": "Muammo",
@@ -53,6 +54,8 @@
 		"after": "Tasdiqlangan student chegirmalari",
 		"statBefore": "Suiste’mol holatlari",
 		"statAfter": "Ishonch darajasi",
+		"statBeforeValue": "Xavfli",
+		"statAfterValue": "Ishonchli",
 		"featuresTitle": "Asosiy imkoniyatlar",
 		"features": [
 			"Tasdiqlash tizimi",
@@ -139,23 +142,19 @@
 		"items": [
 			{
 				"title": "Talabalar o‘sishi",
-				"text": "Ko‘proq ro‘yxatdan o‘tgan talabalar — ko‘proq xaridlar.",
-				"stat": "+38%"
+				"text": "Ko‘proq ro‘yxatdan o‘tgan talabalar — ko‘proq xaridlar."
 			},
 			{
 				"title": "Konversiya",
-				"text": "Tasdiqlangan chegirmalar ko‘rsatkichlarni oshiradi.",
-				"stat": "+22%"
+				"text": "Tasdiqlangan chegirmalar ko‘rsatkichlarni oshiradi."
 			},
 			{
 				"title": "Sodiqlik",
-				"text": "Chegirmalar qaytishlarni va retentionni ko‘paytiradi.",
-				"stat": "+30%"
+				"text": "Chegirmalar qaytishlarni va retentionni ko‘paytiradi."
 			},
 			{
 				"title": "Brend ishonchi",
-				"text": "Soxta foydalanish kamayadi, ishonch ortadi.",
-				"stat": "-70%"
+				"text": "Soxta foydalanish kamayadi, ishonch ortadi."
 			}
 		]
 	},

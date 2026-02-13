@@ -57,7 +57,7 @@ const SolutionSection: React.FC = () => {
 										{t('solution.statBefore')}
 									</p>
 									<p className='mt-2 text-2xl font-semibold text-slate-900 dark:text-white'>
-										12%
+										{t('solution.statBeforeValue')}
 									</p>
 								</div>
 								<div className='glass-panel rounded-2xl p-4'>
@@ -65,7 +65,7 @@ const SolutionSection: React.FC = () => {
 										{t('solution.statAfter')}
 									</p>
 									<p className='mt-2 text-2xl font-semibold text-slate-900 dark:text-white'>
-										80%
+										{t('solution.statAfterValue')}
 									</p>
 								</div>
 							</div>

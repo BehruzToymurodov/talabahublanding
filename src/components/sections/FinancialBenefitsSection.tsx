@@ -19,7 +19,6 @@ const FinancialBenefitsSection: React.FC = () => {
   const items = t('financial.items', { returnObjects: true }) as Array<{
     title: string
     text: string
-    stat: string
   }>
 
   return (
@@ -42,9 +41,8 @@ const FinancialBenefitsSection: React.FC = () => {
                 <div className="p-6">
                   <div className="flex items-center justify-between">
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{item.title}</h3>
-                    <span className="flex items-center gap-2 text-base font-semibold text-emerald-500">
+                    <span className="text-emerald-500" aria-hidden="true">
                       <TrendingUp size={16} />
-                      {item.stat}
                     </span>
                   </div>
                   <p className="mt-3 text-base text-slate-600 dark:text-slate-300">{item.text}</p>

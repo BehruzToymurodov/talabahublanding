@@ -166,7 +166,7 @@ const HeroSection: React.FC = () => {
 								<div className='glass-panel rounded-2xl p-4'>
 									<div className='flex items-center justify-between text-xs text-slate-500 dark:text-slate-400'>
 										<span>{t('hero.panelAccessLabel')}</span>
-										<span>80%</span>
+										<span>{t('hero.panelAccessValue')}</span>
 									</div>
 									<div className='mt-3 h-2 rounded-full bg-white/40'>
 										<div className='h-2 w-5/6 rounded-full bg-gradient-to-r from-cyan-400 to-emerald-400' />

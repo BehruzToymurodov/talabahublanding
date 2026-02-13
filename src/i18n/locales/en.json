@@ -26,7 +26,8 @@
 		"panelSecureText": "Verified in minutes",
 		"panelPersonalTitle": "Personal offers",
 		"panelPersonalText": "Discounts tailored to you",
-		"panelAccessLabel": "Partner access"
+		"panelAccessLabel": "Partner access",
+		"panelAccessValue": "Broad coverage"
 	},
 	"problem": {
 		"title": "Problem",
@@ -53,6 +54,8 @@
 		"after": "Verified student discounts",
 		"statBefore": "Abuse rate",
 		"statAfter": "Trust level",
+		"statBeforeValue": "Risky",
+		"statAfterValue": "Trusted",
 		"featuresTitle": "Core capabilities",
 		"features": [
 			"Verification system",
@@ -139,23 +142,19 @@
 		"items": [
 			{
 				"title": "Student growth",
-				"text": "More verified students means more purchases.",
-				"stat": "+38%"
+				"text": "More verified students means more purchases."
 			},
 			{
 				"title": "Conversion",
-				"text": "Verified discounts improve performance.",
-				"stat": "+22%"
+				"text": "Verified discounts improve performance."
 			},
 			{
 				"title": "Retention",
-				"text": "Discounts boost repeat usage and loyalty.",
-				"stat": "+30%"
+				"text": "Discounts boost repeat usage and loyalty."
 			},
 			{
 				"title": "Brand trust",
-				"text": "Less abuse, higher confidence.",
-				"stat": "-70%"
+				"text": "Less abuse, higher confidence."
 			}
 		]
 	},
